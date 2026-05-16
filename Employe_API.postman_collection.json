@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "bac7ee24-94dd-4258-8a6c-b0b514b16170",
+    "name": "Employe_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39168547"
+  },
+  "item": [
+    {
+      "name": "Get All Emp",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "employee"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Emp By UUID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employee/130e0c49-7696-4f54-99e8-96de08c5db0a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "employee",
+            "130e0c49-7696-4f54-99e8-96de08c5db0a"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Emp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Kiran\",\r\n  \"lastName\": \"Raje\",\r\n  \"fullName\": \"Kiran Raje\",\r\n  \"salary\": 43000,\r\n  \"age\": 23,\r\n  \"jobTitle\": \"Intern\",\r\n  \"email\": \"kiran@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/employee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "employee"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
